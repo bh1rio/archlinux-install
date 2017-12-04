@@ -1,4 +1,4 @@
-parted -s -m /dev/sda mktable gpt
+parted -s -m /dev/sda mktable msdos
 parted -s -m /dev/sda mkpart primary linux-swap 0% 8GB
 parted -s -m /dev/sda mkpart primary ext4 8GB 100%
 mkswap /dev/sda1
