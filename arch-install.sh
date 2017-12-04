@@ -17,7 +17,7 @@ arch-chroot /mnt hwclock --systohc --utc
 echo black > /mnt/etc/hostname
 arch-chroot /mnt mkinitcpio -p linux
 #arch-chroot /mnt passwd
-arch-chroot /mnt pacman -S --noprogressbar grub dialog wpa_supplicant
+arch-chroot /mnt pacman -S --noconfirm grub dialog wpa_supplicant
 arch-chroot /mnt grub-install --target=i386-pc /dev/sda
 arch-chroot /mnt grub-mkconfig -o /boot/grub/grub.cfg
 umount -R /mnt
