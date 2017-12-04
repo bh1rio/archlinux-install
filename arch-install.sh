@@ -8,6 +8,5 @@ mount /dev/sda2 /mnt
 echo "Server = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
 pacstrap -i /mnt
 genfstab -U -p /mnt >> /mnt/etc/fstab
-arch-chroot /mnt "touch /etc/locale.gen"
-arch-chroot /mnt "echo 'en_US.UTF-8 UTF-8' > /etc/locale.gen"
+arch-chroot /mnt echo 'en_US.UTF-8 UTF-8' > /etc/locale.gen
 arch-chroot /mnt locale-gen
