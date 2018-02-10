@@ -5,5 +5,5 @@ pacman -S --noconfirm filezilla
 pacman -S --noconfirm libreoffice-fresh libreoffice-fresh-zh-CN
 pacman -S --noconfirm jdk8-openjdk eclipse-jee atom
 pacman -S --noconfirm dotnet-sdk
-pacman -S --noconfirm go
+pacman -S --noconfirm go sudo
 #pycharm intellij-idea-community-edition
