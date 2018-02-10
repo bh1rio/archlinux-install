@@ -12,7 +12,7 @@ echo LANG=en_US.UTF-8 > /mnt/etc/locale.conf
 rm /mnt/etc/localtime
 arch-chroot /mnt ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 arch-chroot /mnt hwclock --systohc --utc
-echo black > /mnt/etc/hostname
+echo deepblack > /mnt/etc/hostname
 arch-chroot /mnt mkinitcpio -p linux
 #arch-chroot /mnt passwd
 arch-chroot /mnt pacman -S --noconfirm grub dialog wpa_supplicant intel-ucode wget git
