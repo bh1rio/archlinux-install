@@ -1,4 +1,4 @@
-pacman -S xorg xorg-xinit
-pacman -S cinnamon gnome-terminal
+pacman -S --noconfirm xorg xorg-xinit
+pacman -S --noconfirm cinnamon gnome-terminal
 wget https://github.com/bh1rio/archlinux-install/raw/master/xinitrc
 mv xinitrc .xinitrc
