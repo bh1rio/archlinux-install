@@ -1,3 +1,4 @@
+pacman -S --noconfirm fcitx-im fcitx-configtool fcitx-googlepinyin
 pacman -S --noconfirm noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 pacman -S --noconfirm chromium firefox firefox-i18n-zh-cn thunderbird thunderbird-i18n-zh-cn
 pacman -S --noconfirm filezilla
