@@ -3,7 +3,7 @@ parted -s -m /dev/sda mkpart primary ext4 0% 100%
 mkfs.ext4 /dev/sda1
 mount /dev/sda1 /mnt
 echo "Server = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
-pacstrap /mnt base base-devel
+pacstrap /mnt base linux linux-firmware base-devel
 genfstab -U -p /mnt >> /mnt/etc/fstab
 echo "en_US.UTF-8 UTF-8" > /mnt/etc/locale.gen
 echo "zh_CN.UTF-8 UTF-8" >> /mnt/etc/locale.gen
